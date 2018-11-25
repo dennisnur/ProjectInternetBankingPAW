@@ -1,0 +1,76 @@
+.add-form{
+    margin: auto;
+    width: 70%;
+    background-color: #66a5ad;
+    padding: 0 0 10px 20px;
+}
+
+.form-control-label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.form-control-input {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.form-control-error {
+    float: left;
+    width: 35%;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: red;
+    font-size: 10pt;
+}
+
+.form-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text],input[type=password],input[type=date], select, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px aliceblue;
+    border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+}
+
+.tombol-tambah-data {
+    background-color: #375e97;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+    margin-right: 105px;
+}
+
+.tombol-tambah-data:hover{
+    background-color: #0f0;
+}
+
+.tombol-batal-tambah{
+    text-decoration: none;
+    background-color: #375e97;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: inherit;
+    margin-top: 4px;
+    margin-left: 225px;
+}
+
+.tombol-batal-tambah:hover{
+    background-color: #ff0700;
+}

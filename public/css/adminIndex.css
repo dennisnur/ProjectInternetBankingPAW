@@ -1,161 +1,67 @@
-body{
-    margin: 0;
-    background-color: aquamarine;
-    font-family: calibri;
-}
-
-.container{
-    margin: auto;
-    width: 60%;
-    background-color: aqua;
-    box-shadow: 0px 0px 5px 0px grey;
-    margin-top: 5px;
-}
-
-.header{
-    height: 50px;
-    background-color: aliceblue;
-}
-
-.logo{
-    margin-left: 10px;
-    float: left;
-    height: 100%;
-    color: darkslateblue;
-}
-
-.logo h1{
-    margin: 0px;
-}
-
-.menu {
-    height: 100%;
-    margin-left: 70px;
-}
-
-.menu a{
-    float: left;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 17px;
-    padding-top: 15px;
-    text-align: center;
-}
-
-.menu a:hover{
-    color: cornflowerblue;
-    background-color: aquamarine;
-}
-
-menu a:active{
-    background-color: transparent;
-}
-
-
-.menuRight {
-    float: right;
-}
-
-.admin{
-    float: left;
-    font-weight: bold;
-}
-
-.admin p{
-    margin-right: 10px;
-}
-
-.content{
-    height: 450px;
-    background-image: linear-gradient(aquamarine, aqua);
-    border: 1px solid aqua;
-}
-
-.content h3{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.view-costumer{
-    background-color: aqua;
+.view-customer {
+    background-color: #66a5ad;
     margin: auto;
     width: 70%;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 5px 0px grey;
-    padding: 25px;
-}
-
-table, th, td{
-    border-collapse: collapse;
+    padding: 5px;
 }
 
 table {
     width: 100%;
-    background-color: darkseagreen;
+}
+
+th, td{
+    border-collapse: separate;
+    padding-left: 10px;
 }
 
 th {
     text-align: left;
-    background-color: chartreuse;
+    background-color: aliceblue;
     height: 40px;
 }
 
-td{
-    height: 35px;
+td {
+    height: 25px;
+    border: 1px solid #003b46;
+    color: aliceblue;
+    padding: 5px;
 }
 
-tr:nth-child(even){
-    background-color: beige;
-}
-
-.tombol-ubah{
+.tombol-rekening, .tombol-ubah, .tombol-hapus, .tombol-tambah, .tombol-batal{
     text-decoration: none;
-    background-color: #e1e104;
+    background-color: #375e97;
     color: white;
     padding: 6px;
-    border-radius: 4px;
+    border-radius: 2px;
+    border: none;
     cursor: pointer;
 }
 
-.tombol-hapus{
-    text-decoration: none;
-    background-color: #d9534f;
-    color: white;
-    padding: 6px;
-    border-radius: 4px;
-    cursor: pointer;
+.tombol-batal{
+    float: left;
 }
 
 .tombol-tambah{
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
     padding: 6px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
     float: right;
+}
+
+.tombol-rekening:hover{
+    background-color: #ff4e09;
 }
 
 .tombol-ubah:hover{
     background-color: #ffff0b;
-    
 }
 
 .tombol-hapus:hover{
     background-color: #ff0700;
 }
 
-.tombol-tambah:hover{
-    background-color: #0f0;
+.tombol-batal:hover{
+    background-color: #ff0700;
 }
 
-
-.footer{
-    background-color: aliceblue;
-    text-align: center;
+.tombol-tambah:hover{
+    background-color: #0f0;
 }

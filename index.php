@@ -1,18 +1,27 @@
 <?php
-    include 'modules/validate.inc';
+    include 'modules/validate.inc'; //include file
     $error = "";
+    session_start(); //start session
+    //kondisi jika session telah berjalan maka akan dialihkan ke halaman selain index
+    if (@$_SESSION['admin']){
+        header('Location: ./admin/adminIndex.php');
+    }
+    else if(@$_SESSION['customer']){
+        header('Location: ./customer/customerIndex.php');
+    }
+    
+    //kondisi ketika login admin maupun customer dan kesalahan saat login
     if (isset($_POST['login'])){
-        //echo checkPassword($_POST['username'], $_POST['passwd']);
         if (checkPassword($_POST['username'], $_POST['password'])){
             session_start();
             $_SESSION['admin'] = true;
             header('Location: ./admin/adminIndex.php');
             exit();
         }
-        else if (checkPasswordCostumer($_POST['username'], $_POST['password'])) {
+        else if (checkPasswordCustomer($_POST['username'], $_POST['password'])) {
             session_start();
-            $_SESSION['costumer'] = true;
-            header('Location: ./costumer/costumerIndex.php?user='.$_POST['username']);
+            $_SESSION['customer'] = $_POST['username'];
+            header('Location: ./customer/customerIndex.php');
             exit();
         }
         else{
@@ -20,57 +29,34 @@
         }
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Quick Internet Banking</title>
-    <link rel="stylesheet" type="text/css" href="public/css/index.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <h1>QB</h1>
-            </div>
-            <div class="menu">
-                <a href="index.php">Beranda</a>
-                <a href="#">Tentang</a>
-            </div>
-        </div>
-        <div class="content">
-            <h2>Selamat Datang
-                <br />di Quick Online</h2>
-            <div class="description">
-                <p>Nikmati layanan <strong>Quick Online,</strong><br />solusi Internet Banking terbaru.</p>
-            </div>
-            <div class="container-login">
-                <div class="content-login">
-                    <h3>Masuk</h3>
-                    <form action="index.php" method="post">
-                        <div class="content-input">
-                            <input type="text" name="username" placeholder="Nama Pengguna">
-                        </div>
-                        <div class="content-input">
-                            <input type="password" name="password" placeholder="Kata Sandi">
-                        </div>
-                        <div class="error">
-                            <span><?php echo $error ?></span>
-                        </div>
-                        <div class="content-input">
-                            <input class="btn-login" style="width: 80%;" type="submit" name="login" value="Masuk">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Quick Bank</p>
-            <p>&copy;2018</p>
-        </div>
+<!-- Bagian header, dengan include file header.php -->
+<?php include 'header.php'; ?> 
+<!-- Bagian konten index yang berisi deskripsi dan form login admin maupun customer -->
+<div class="content">
+    <h2>Selamat Datang
+        <br />di Quick Online</h2>
+    <!-- Bagian deskripsi -->
+    <div class="description">
+        <p>Nikmati layanan <strong>Quick Online,</strong><br />solusi Internet Banking terbaru.</p>
     </div>
-</body>
+    <div class="content-login">
+        <h3>Masuk</h3>
+        <!-- Bagian form login-->
+        <form action="index.php" method="post">
+            <div class="content-input">
+                <input type="text" name="username" placeholder="Nama Pengguna">
+            </div>
+            <div class="content-input">
+                <input type="password" name="password" placeholder="Kata Sandi">
+            </div>
+            <div class="error">
+                <span>
+                    <?php echo $error ?></span>
+            </div>
+            <div class="content-input">
+                <input class="btn-login" style="width: 58%;" type="submit" name="login" value="Masuk">
+            </div>
+        </form>
+    </div>
 
-</html>
+<?php include 'footer.php'; ?>

@@ -1,0 +1,81 @@
+.add-form{
+    margin: auto;
+    width: 80%;
+    background-color: #66a5ad;
+    padding: 20px;
+}
+
+.form-control-label {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.form-control-input {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+}
+
+.form-control-error {
+    float: left;
+    width: 35%;
+    margin-top: 5px;
+    margin-left: 30px;
+    color: red;
+    font-size: 10pt;
+}
+
+.form-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text],input[type=password],input[type=date],textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px aliceblue;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 108%;
+}
+
+label {
+  display: inline-block;
+}
+
+.tombol-kirim-transfer, .tombol-batal-transfer {
+    text-decoration: none;
+    background-color: #375e97;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tombol-kirim-transfer {
+    float: right;
+    margin-top: 8px;
+    margin-right: 265px;
+}
+
+.tombol-kirim-transfer:hover{
+    background-color: #0f0;
+}
+
+.tombol-batal-transfer{
+    float: left;
+    margin-top: 6px;
+    margin-left: 340px;
+}
+
+.tombol-batal-transfer:hover{
+    background-color: #ff0700;
+}

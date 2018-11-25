@@ -1,0 +1,25 @@
+.detil{
+    background-color: #66a5ad;
+    width: 400px;
+}
+
+.column-label {
+    float: left;
+    width: 100px;
+    background-color: bisque;
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.column-value {
+    float: left;
+    width: 250px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

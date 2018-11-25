@@ -1,0 +1,42 @@
+.about {
+    margin: auto;
+    width:900px;
+    background-color: #66a5ad;
+}
+h3 {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table{
+    width: 100%;
+}
+
+td, th{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th{
+    background-color: #003b46;
+    color: aliceblue;
+}
+.value {
+    border: none;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}

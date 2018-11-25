@@ -1,0 +1,45 @@
+.view-profile{
+    background-color: #66a5ad;
+    margin: auto;
+    width: 450px;
+    padding: 25px;
+    padding-bottom: 45px;
+}
+
+.column-label {
+    float: left;
+    width: 100px;
+    background-color: bisque;
+    padding: 5px;
+    margin-left: 40px;
+}
+
+.column-value {
+    float: left;
+    width: 250px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tombol-ubah-password{
+    text-decoration: none;
+    background-color: #375e97;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+.tombol-ubah-password:hover{
+    background-color: #ffff0b;
+    
+}

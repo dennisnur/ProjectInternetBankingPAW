@@ -1,0 +1,33 @@
+.transaction-history{
+    background-color: #66a5ad;
+    margin: auto;
+    width: 70%;
+    padding: 25px;
+}
+
+.container-form{
+    margin-bottom: 10px;
+}
+
+.select-riwayat {
+    width:40%;
+    padding: 10px;
+    border: 1px aliceblue;
+    border-radius: 5px;
+}
+
+.tombol-pilih-riwayat {
+    background-color: #375e97;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2px;
+    margin-right: 315px;
+}
+
+.tombol-pilih-riwayat:hover{
+    background-color: #0f0;
+}

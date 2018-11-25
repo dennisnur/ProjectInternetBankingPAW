@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: #c4dfe6;
+    font-family: calibri;
+}
+
+.header {
+    background-color: #003b46;
+    height: 50px;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 10px;
+    float: left;
+    height: 100%;
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.menu {
+    height: 100%;
+    margin-left: 70px;
+}
+
+.menu a {
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 17px;
+    padding-top: 15px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.menu a:link {
+    color: aliceblue;
+}
+
+.menu a:hover {
+    color: #003b46;
+    background-color: gainsboro;
+}
+
+.menuRight{
+    float: right;
+}
+
+.content{
+    margin: auto;
+    height: auto;
+    width: 70%;
+    height: 448px;
+}

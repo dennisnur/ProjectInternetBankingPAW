@@ -1,0 +1,49 @@
+.view-rekening{
+    background-color: #66a5ad;
+    margin: auto;
+    width: 70%;
+    padding: 25px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td{
+    border-collapse: separate;
+    padding-left: 10px;
+}
+
+th {
+    text-align: left;
+    background-color: aliceblue;
+    height: 40px;
+}
+
+td {
+    height: 25px;
+    border: 1px solid #003b46;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.tombol-bantuan{
+    text-decoration: none;
+    background-color: #375e97;
+    color: white;
+    padding: 1px 6px 1px 6px;
+    border-radius: 10px;
+    border: 1.5px solid aliceblue;
+    cursor: pointer;
+    float: right;
+}
+.tombol-bantuan:hover{
+    background-color: cyan;
+}
+
+.info{
+    display: none;
+}
+.display{
+    display: contents;
+}

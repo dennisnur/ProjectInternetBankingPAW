@@ -1,81 +1,5 @@
-body{
-    margin: 0;
-    background-color: aquamarine;
-    font-family: calibri;
-}
-
-.container{
-    margin: auto;
-    width: 60%;
-    background-color: aqua;
-    box-shadow: 0px 0px 5px 0px grey;
-    margin-top: 5px;
-}
-
-.header{
-    height: 50px;
-    background-color: aliceblue;
-}
-
-.logo{
-    margin-left: 10px;
-    float: left;
-    height: 100%;
-    color: darkslateblue;
-}
-
-.logo h1{
-    margin: 0px;
-}
-
-.menu {
-    height: 100%;
-    margin-left: 70px;
-}
-
-.menu a{
-    float: left;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 17px;
-    padding-top: 15px;
-    text-align: center;
-}
-
-.menu a:hover{
-    color: cornflowerblue;
-    background-color: aquamarine;
-}
-
-menu a:active{
-    background-color: transparent;
-}
-
-.menuRight{
-    float: right;
-}
-
-.content{
-    height: 450px;
-    background-image: linear-gradient(aquamarine, aqua);
-    border: 1px solid aqua;
-}
-
 .content h2, p{
     margin-left: 40px;
-}
-
-.container-login{
-    width: 30%;
-    height: 400px;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .content-login h3{
@@ -89,23 +13,21 @@ menu a:active{
 }
 
 .content-login {
-    background-color: aqua;
-    width: 100%;
-    height: 65%;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 0px 5px 0px grey;
-    margin-left: 200px;
+    background-color: #66a5ad;
+    width: 250px;
+    height: 250px;;
+    margin-left: 450px;
 }
 
 .content-input {
     text-align: center;
     margin-top: 10px;
+    clear: both;
 }
 
 .content-input input {
     padding: 10px;
-    width: 70%;
+    width: 50%;
     text-align: center;
     border: 1px aliceblue;
     border-radius: 5px;
@@ -114,7 +36,7 @@ menu a:active{
 .error{
     text-align: center;
     color: red;
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
@@ -126,7 +48,8 @@ menu a:active{
 }
 
 .btn-login:hover{
-    background-color: aquamarine;
+    background-color: gainsboro;
+    cursor: pointer;
 }
 
 .btn-login:active{
@@ -138,9 +61,4 @@ menu a:active{
     width: 260px;
     border-bottom-right-radius: 10px;
     padding: 1px;
-}
-
-.footer{
-    background-color: aliceblue;
-    text-align: center;
 }
