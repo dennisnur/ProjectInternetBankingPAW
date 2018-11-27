@@ -27,7 +27,7 @@
             <div class="menu">
                 <a href="customerIndex.php">Rekening</a>
                 <a href="customerTransaction.php">Transaksi</a>
-                <a href="customerProfile.php">Profile</a>
+                <a href="customerProfile.php">Detil Akun</a>
                 <div class="menuRight">
                     <div class="admin">
                         <p>

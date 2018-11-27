@@ -1,5 +1,5 @@
 <?php
-    //mulai session untuk admin
+    //mulai session untuk customer
     session_start();  
     if (!isset($_SESSION['customer']))
     {

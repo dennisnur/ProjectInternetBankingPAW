@@ -2,11 +2,12 @@
     //fungsi untuk validasi input no rekening
     function validateNoRekening(&$errors, $field_list, $field_name, &$error_con) {
         $pattern = "/^[0-9]+$/"; //format Reg Exp untuk angka
-        $dbc = new PDO('mysql:host=localhost;dbname=banking','root',''); //koneksi database
+        
+        $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
 
         $sql = "SELECT NO_REK FROM rekening"; //query
 
-        $statement = $dbc->prepare($sql); //prepare statement
+        $statement = $connection->prepare($sql); //prepare statement
         $statement->execute();
         
         //kondisi bila no rekenening sudah digunakan
@@ -145,11 +146,11 @@
     
     //fungsi validasi input Nama Pengguna
     function validateNamaPengguna(&$errors, $field_list, $field_name, &$error_con) {
-        $dbc = new PDO('mysql:host=localhost;dbname=banking','root',''); //koneksi database
+        $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
 
         $sql = "SELECT USERNAME_CUST FROM customer"; //query
 
-        $statement = $dbc->prepare($sql); //prepare statement
+        $statement = $connection->prepare($sql); //prepare statement
         $statement->execute();
         
         //kondisi bila no rekenening sudah digunakan
@@ -248,11 +249,11 @@
     
     //fungsi validasi input Saldo Rekening
     function validateSaldoRekening(&$errors, $field_list, $field_name, &$error_con, $jumlah_uang){
-        $dbc = new PDO('mysql:host=localhost;dbname=banking','root',''); //koneksi database
+        $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
 
         $sql = "SELECT SALDO FROM rekening WHERE NO_REK = :no_rek"; //query
 
-        $statement = $dbc->prepare($sql); //prepare statement
+        $statement = $connection->prepare($sql); //prepare statement
         $statement->bindValue(':no_rek',$field_list[$field_name]);
         $statement->execute();
         
@@ -266,16 +267,15 @@
     }
     
     function validateOldPassword(&$errors, $field_list, $field_name, &$error_con){
-        $dbc = new PDO('mysql:host=localhost;dbname=banking','root',''); //koneksi database
-
+        $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
+        
         $sql = "SELECT PASSWORD_CUST FROM customer WHERE PASSWORD_CUST = SHA2(:password,0)"; //query
 
-        $statement = $dbc->prepare($sql); //prepare statement
+        $statement = $connection->prepare($sql); //prepare statement
         $statement->bindValue(':password',$field_list[$field_name]); //bindValue statement
         $statement->execute();
         
         //kondisi jika password salah
-        
         if (!$statement->rowCount() > 0){
             $errors = 'Kata sandi salah';
             $error_con = true;

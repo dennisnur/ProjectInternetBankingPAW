@@ -1,22 +1,23 @@
+/* css untuk class add-form */
 .add-form{
     margin: auto;
     width: 80%;
     background-color: #66a5ad;
     padding: 20px;
 }
-
+/* css untuk class form-control-label */
 .form-control-label {
     float: left;
     width: 25%;
     margin-top: 6px;
 }
-
+/* css untuk class form-control-input */
 .form-control-input {
     float: left;
     width: 35%;
     margin-top: 6px;
 }
-
+/* css untuk class form-control-error */
 .form-control-error {
     float: left;
     width: 35%;
@@ -25,31 +26,31 @@
     color: red;
     font-size: 10pt;
 }
-
+/* css untuk class form-group */
 .form-group:after {
     content: "";
     display: table;
     clear: both;
 }
-
+/* css untuk tag input[type=text],input[type=password],input[type=date],textarea */
 input[type=text],input[type=password],input[type=date],textarea{
     width: 100%;
     padding: 10px;
     border: 1px aliceblue;
     border-radius: 5px;
 }
-
+/* css untuk tag select */
 select {
     border: 1px aliceblue;
     border-radius: 5px;
     padding: 10px;
     width: 108%;
 }
-
+/* css untuk class label */
 label {
   display: inline-block;
 }
-
+/* css untuk class tombol-kirim-transfer, tombol-batal-transfer */
 .tombol-kirim-transfer, .tombol-batal-transfer {
     text-decoration: none;
     background-color: #375e97;

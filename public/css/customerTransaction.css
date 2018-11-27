@@ -1,10 +1,11 @@
+/* css untuk class view-transaction */
 .view-transaction{
     background-color: #66a5ad;
     margin: auto;
     width: 50%;
     padding: 10px 10px 40px 10px;
 }
-
+/* css untuk class tombol-transfer, tombol-riwayat, tombol-kembali */
 .tombol-transfer, .tombol-riwayat, .tombol-kembali{
     text-decoration: none;
     background-color: #375e97;

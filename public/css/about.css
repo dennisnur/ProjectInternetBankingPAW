@@ -1,24 +1,26 @@
+/* css untuk class .about */
 .about {
     margin: auto;
     width:900px;
     background-color: #66a5ad;
 }
+/* css untuk tag h3 */
 h3 {
     text-align: center;
 }
-
+/* css untuk class .column */
 .column {
     float: left;
     width: 50%;
     margin-top: 6px;
 }
-
+/* css untuk class .row */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
+/* css untuk tag table, td, th  */
 table{
     width: 100%;
 }
@@ -32,10 +34,11 @@ th{
     background-color: #003b46;
     color: aliceblue;
 }
+/* css untuk class value */
 .value {
     border: none;
 }
-
+/* css untuk tag img */
 img{
     width: 150px;
     height: 150px;

@@ -1,5 +1,5 @@
 <?php include 'header.php'?>
-<!-- Bagian isi konten about.php -->
+<!-- Bagian isi konten halaman berisi data anggoota kelompok -->
 <div class="about">
     <h3>Tentang</h3>
     <p>Aplikasi Internet Banking ini dibuat ditujukan untuk memenuhi tugas mata kuliah Pengembangan Aplikasi Web, Jurusan Teknik Informatika, Fakultas Teknik, Universitas Trunojoyo Madura, Semester Gasal, Tahun Ajaran 2018/2019.</p>
@@ -32,7 +32,7 @@
                     <th>Deskripsi Kerja</th>
                 </tr>
                 <tr>
-                    <td class="value">Fungsi Create, Read, Update, Delete untuk Admin</td>
+                    <td class="value">Fungsi Create Customer, Read Customer, Update Customer, Delete Customer, Create No Rekening, Delete No Rekening, Halaman index.php, Fungsi Login Admin & Customer</td>
                 </tr>
             </table>
         </div>
@@ -63,7 +63,7 @@
                     <th>Deskripsi Kerja</th>
                 </tr>
                 <tr>
-                    <td class="value">Fungsi Read Daftar Riwayat Transaksi, Halaman Transaksi, Riwayat Transaksi, Use Case, Activity Diagram</td>
+                    <td class="value">Fungsi Read Daftar Riwayat Transaksi, Halaman Transaksi, Halaman Riwayat Transaksi, Use Case, Activity Diagram, Validasi No Rekening Pengirim, No Rekening Penerima, Jumlah Uang Transfer, Saldo Rekening Pengirim, Password Lama</td>
                 </tr>
             </table>
         </div>
@@ -96,7 +96,7 @@
                     <th>Deskripsi Kerja</th>
                 </tr>
                 <tr>
-                    <td class="value">Validasi Form Transfer, Halaman Transfer, Halaman Transfer, Use Case, Activity Diagram</td>
+                    <td class="value">Validasi Form Transfer, Halaman Transfer, Use Case, Activity Diagram, Validasi input No Rekening, Nama, Jenis Kelamin, Tanggal Lahir, Alamat</td>
                 </tr>
             </table>
         </div>
@@ -127,7 +127,7 @@
                     <th>Deskripsi Kerja</th>
                 </tr>
                 <tr>
-                    <td class="value">Rancangan Database CDM & PDM, Halaman Aboout, Halaman Form Edit Customer, Fungsi Edit Customer</td>
+                    <td class="value">Rancangan Database CDM & PDM, Halaman About, Halaman Form Edit Customer, Fungsi Edit Customer, Validasi Input No Telpon, Saldo, Nama Pengguna, Password, Konfirmasi Password</td>
                 </tr>
             </table>
         </div>

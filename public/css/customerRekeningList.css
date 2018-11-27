@@ -1,8 +1,9 @@
+/* css untuk class detil */
 .detil{
     background-color: #66a5ad;
     width: 400px;
 }
-
+/* css untuk class column-label */
 .column-label {
     float: left;
     width: 100px;
@@ -10,14 +11,14 @@
     padding: 5px;
     margin-left: 2px;
 }
-
+/* css untuk class column-value  */
 .column-value {
     float: left;
     width: 250px;
     background-color: aliceblue;
     padding: 5px;
 }
-
+/* css untuk class row */
 .row:after {
     content: "";
     display: table;

@@ -1,3 +1,4 @@
+/* css untuk class view-profile */
 .view-profile{
     background-color: #66a5ad;
     margin: auto;
@@ -5,7 +6,7 @@
     padding: 25px;
     padding-bottom: 45px;
 }
-
+/* css untuk class column-label */
 .column-label {
     float: left;
     width: 100px;
@@ -13,20 +14,20 @@
     padding: 5px;
     margin-left: 40px;
 }
-
+/* css untuk class column-value */
 .column-value {
     float: left;
     width: 250px;
     background-color: aliceblue;
     padding: 5px;
 }
-
+/* css untuk class row */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
+/* css untuk tombol-ubah-password */
 .tombol-ubah-password{
     text-decoration: none;
     background-color: #375e97;

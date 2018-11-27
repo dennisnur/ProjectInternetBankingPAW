@@ -13,10 +13,6 @@
 <div class="content">
     <h3>Daftar Rekening</h3>
     <div class="view-rekening">
-        <button class="tombol-bantuan" onclick="pop()">?</button>
-        <div class="info" id="info">
-            <p>Halaman ini berisi informasi rekening yang anda miliki.</p>
-        </div>
         <table>
             <tr>
                 <th>No Rekening</th>

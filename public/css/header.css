@@ -1,31 +1,32 @@
+/* css untuk tag body */
 body {
     margin: 0;
     background-color: #c4dfe6;
     font-family: calibri;
 }
-
+/* css untuk class header */
 .header {
     background-color: #003b46;
     height: 50px;
     width: 100%;
 }
-
+/* css untuk class logo */
 .logo {
     margin-left: 10px;
     float: left;
     height: 100%;
     color: white;
 }
-
+/* css untuk tag h1 dalam class logo */
 .logo h1 {
     margin: 0;
 }
-
+/* css untuk class menu */
 .menu {
     height: 100%;
     margin-left: 70px;
 }
-
+/* css untuk tag a dalam class menu */
 .menu a {
     float: right;
     text-decoration: none;
@@ -46,11 +47,11 @@ body {
     color: #003b46;
     background-color: gainsboro;
 }
-
+/* css untuk class menuRight */
 .menuRight{
     float: right;
 }
-
+/* css untuk class content */
 .content{
     margin: auto;
     height: auto;

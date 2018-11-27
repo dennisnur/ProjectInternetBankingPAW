@@ -24,7 +24,7 @@
         else{
             //kondisi ketika input dari user benar, akan langsung memaanggil fungsi edit_customer_profile();
             edit_customer_profile($_POST['id'], $_POST['password']);
-            header('Location: customerProfile.php');    
+            header('Location: customerEditSuccess.php');    
         }
     }
 

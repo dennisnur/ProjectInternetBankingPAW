@@ -8,12 +8,12 @@
     profile_customer($user);
 ?>
 <?php include 'headerCustomer.php'; //menambahkan fiel headerCustomer.php?>
-<!-- Bagian isi konten halaman berupa pemberitahuan tansfer berhasil dilakukan -->
+<!-- Bagian isi konten halaman berupa pemberitahuan password berhasil diperbarui berhasil dilakukan -->
 <div class="content">
-    <h3>Halaman Informasi Transfer</h3>
+    <h3>Halaman Informasi Ubah Password</h3>
     <div class="view-transaction">
-        <p>Transfer sebesar Rp. <?php echo $_GET['uang']; ?>,- ke no rekening <?php echo $_GET['rek']; ?> berhasil !</p>
-        <a href="customerTransaction.php" class="tombol-kembali">Kembali</a>
+        <p>Password berhasil diubah !</p>
+        <a href="customerProfile.php" class="tombol-kembali">Kembali</a>
     </div>
 </div>
 <?php include '../footer.php'; //menambahkan file footer.php?>

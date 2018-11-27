@@ -1,21 +1,22 @@
+/* css untuk class transaction-history */
 .transaction-history{
     background-color: #66a5ad;
     margin: auto;
     width: 70%;
     padding: 25px;
 }
-
+/* css untuk class container-form */
 .container-form{
     margin-bottom: 10px;
 }
-
+/* css untuk class select-riwayat */
 .select-riwayat {
     width:40%;
     padding: 10px;
     border: 1px aliceblue;
     border-radius: 5px;
 }
-
+/* css untuk class tombol-pilih-riwayat */
 .tombol-pilih-riwayat {
     background-color: #375e97;
     color: white;
