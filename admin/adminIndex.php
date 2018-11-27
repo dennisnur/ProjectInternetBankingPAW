@@ -1,7 +1,7 @@
 <?php
     //memanggil file yang dibutuhkan
-    require '../modules/admin_permission.inc';
-    include '../modules/admin_modules.inc';
+    require '../modules/admin_permission.php';
+    include '../modules/admin_modules.php';
 ?>
 <?php include 'headerAdmin.php'; //include file headerAdmin.php ?>
 <!-- Bagian konten halaman -->

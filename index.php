@@ -1,5 +1,5 @@
 <?php
-    include 'modules/validate.inc'; //include file
+    include 'modules/validate.php'; //include file
     $error = "";
     session_start(); //start session
     //kondisi jika session telah berjalan maka akan dialihkan ke halaman selain index

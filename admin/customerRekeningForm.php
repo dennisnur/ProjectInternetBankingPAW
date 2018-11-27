@@ -1,14 +1,14 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/admin_permission.inc';
-    include '../modules/admin_modules.inc';
+    require '../modules/admin_permission.php';
+    include '../modules/admin_modules.php';
     //deklarasi variabel
     $error = false;
     $error_no = $error_saldo = "";
     $id = $_GET['id'];
     //kondisi jika user submit formulir
     if (isset($_POST['add'])){
-        require '../modules/validate_input.inc';
+        require '../modules/validate_input.php';
         //memanggil fungsi validasi untuk memvalidasi input dari user
         validateNoRekening($error_no,$_POST,'no_rek',$error);
         validateSaldo($error_saldo,$_POST,'saldo',$error);

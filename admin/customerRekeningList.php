@@ -1,7 +1,7 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/admin_permission.inc';
-    include '../modules/admin_modules.inc';
+    require '../modules/admin_permission.php';
+    include '../modules/admin_modules.php';
     //deklarasi variabel
     $id = $_GET['id'];
     //memanggil fungsi detil_customer();

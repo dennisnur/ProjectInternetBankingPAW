@@ -1,18 +1,18 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/customer_permission.inc';
-    include '../modules/customer_modules.inc';
+    require '../modules/customer_permission.php';
+    include '../modules/customer_modules.php';
     //deklarasi variabel
     $user = $_SESSION['customer'];
     $debit = 1;
-    $kredit = 2;
+    $kredit = 11;
     $error = false;
     $error_no_rek_pengirim = $error_no_rek_penerima = $error_jumlah_uang = $error_pin = $id = $saldo = "";
     //memanggil fungsi profile_customer();
     profile_customer($user);
     //kondisi ketika user submit formulir 
     if(isset($_POST['transfer'])){
-        require '../modules/validate_input.inc';
+        require '../modules/validate_input.php';
         //memanggil fungsi validasi untuk memvalidasi input dari user
         validateNoRekTransfer($error_no_rek_pengirim, $_POST, 'no_rek_pengirim', $error);
         validateNoRekTransfer2($error_no_rek_penerima, $_POST, 'no_rek_penerima', $error);

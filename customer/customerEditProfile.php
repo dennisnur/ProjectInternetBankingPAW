@@ -1,7 +1,7 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/customer_permission.inc';
-    include '../modules/customer_modules.inc';
+    require '../modules/customer_permission.php';
+    include '../modules/customer_modules.php';
     //deklarasi variabel
     $error = false;
     $error_old_password = $error_password = $error_confirm_password = "";
@@ -10,7 +10,7 @@
     profile_customer($user);
     //kondisi ketika user submit formulir
     if (isset($_POST['ubah'])){
-        require '../modules/validate_input.inc';
+        require '../modules/validate_input.php';
         //memanggil fungsi validasi untuk memvakidasi input user
         validateOldPassword($error_old_password,$_POST,'old_password',$error);
         validatePassword($error_password,$_POST,'password',$error);

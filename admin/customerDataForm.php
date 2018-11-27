@@ -1,14 +1,14 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/admin_permission.inc';
-    include '../modules/admin_modules.inc';
+    require '../modules/admin_permission.php';
+    include '../modules/admin_modules.php';
     
     //deklarasi variabel
     $error = false;
     $error_name = $error_gender = $error_birthday = $error_address = $error_email = $error_number = $error_username = $error_password = $error_confirm_password = "";
     //kondisi ketika submit formulir
     if (isset($_POST['add'])){
-        require '../modules/validate_input.inc';
+        require '../modules/validate_input.php';
         //memanggil fungsi validasi untuk input formulir
         validateNama($error_name,$_POST,'nama',$error);
         validateJenisKelamin($error_gender,$_POST,'jenis_kelamin',$error);

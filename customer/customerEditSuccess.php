@@ -1,7 +1,7 @@
 <?php
     //menambahkan file yang dibutuhkan
-    require '../modules/customer_permission.inc';
-    include '../modules/customer_modules.inc';
+    require '../modules/customer_permission.php';
+    include '../modules/customer_modules.php';
     //deklarasi variabel
     $user = $_SESSION['customer'];
     //memanggil fungsi profile_customer()

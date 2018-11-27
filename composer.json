@@ -1,0 +1,14 @@
+{
+    "name": "dennis/project-internet-banking-copy",
+    "description": "Tugas PAW",
+    "type": "project",
+    "license": "public",
+    "authors": [
+        {
+            "name": "dennoz",
+            "email": "dennisthandy@yahoo.co.id"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
