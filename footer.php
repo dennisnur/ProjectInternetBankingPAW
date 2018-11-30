@@ -1,7 +1,7 @@
 <!-- Bagian footer -->
 </div>
 <div class="footer">
-    <p>Quick Bank &copy;2018</p>
+    <span>Quick Bank &copy;2018</span>
 </div>
 </body>
 

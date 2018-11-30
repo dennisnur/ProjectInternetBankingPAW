@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../public/css/customerDataForm.css">
     <link rel="stylesheet" type="text/css" href="../public/css/customerRekeningList.css">
+    <script src="../public/js/script.js"></script>
 </head>
 
 <body>

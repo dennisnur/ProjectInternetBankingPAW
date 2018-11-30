@@ -1,7 +1,7 @@
 /* css untuk tag body */
 body {
     margin: 0;
-    background-color: #c4dfe6;
+    background-color: aliceblue;
     font-family: calibri;
 }
 /* css untuk class header */
@@ -9,6 +9,7 @@ body {
     background-color: #003b46;
     height: 50px;
     width: 100%;
+    position: fixed;
 }
 /* css untuk class logo */
 .logo {
@@ -37,9 +38,6 @@ body {
     padding-top: 15px;
     text-align: center;
     margin-right: 10px;
-}
-
-.menu a:link {
     color: aliceblue;
 }
 
@@ -56,11 +54,13 @@ body {
     margin: auto;
     height: auto;
     width: 70%;
-    height: 448px;
+    border: 1px solid aliceblue;
+    background-color: #c4dfe6;
+    padding-bottom: 70px;
 }
 /* css untuk tag h3 dalam class content */
 .content h3{
-    margin-top: 20px;
+    margin-top: 70px;
     text-align: center;
 }
 /* css untuk class admin */
@@ -72,4 +72,37 @@ body {
 /* css untuk tag p dalam class admin */
 .admin p{
     margin-right: 10px;
+}
+/* css untuk class help */
+.help {
+    margin-top: 55px;
+    float: right;
+    margin-right: 10px;
+}
+/* css untuk class help-button */
+.help-button {
+    border: 1.5px solid #1667cf;
+    padding-left: 7px;
+    background-color: white;
+    border-radius: 15px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-weight: bold;
+}
+.help-button:hover{
+    background-color: #1667cf;
+    cursor: pointer;
+    color: aliceblue;
+}
+/* css untuk class help-description */
+.help-description {
+    display: none;
+    float: right;
+    margin-top: 80px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: aliceblue;
 }

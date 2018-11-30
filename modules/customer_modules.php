@@ -46,7 +46,7 @@
             foreach ($statement as $row) {
                 echo "<tr>
                         <td>{$row['NO_REK']}</td>
-                        <td>Rp. {$row['SALDO']},-</td>
+                        <td>Rp. ".number_format($row['SALDO'],0,",",".").",-</td>
                     </tr>";
             }
         } catch(PDOException $err){
@@ -99,8 +99,11 @@
     //fungsi untuk melakukan transaksi transfer antar customer
     function transfer_customer($no_rek_pengirim, $no_rek_penerima, $jumlah_uang, $debit, $kredit, $saldo){
         try{
+            define('TIMEZONE', 'Asia/Jakarta');
+            date_default_timezone_set(TIMEZONE);
+            $date = date('Y-m-d H:i:s');
             $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
-
+            
             $sql = "SELECT SALDO FROM rekening WHERE NO_REK = :no_rek_pengirim"; //query
 
             $statement = $connection->prepare($sql); //prepare statement
@@ -123,7 +126,7 @@
             $statement->execute(); //execute statement
             
             //query
-            $sql = "INSERT INTO daftar_transaksi (ID_STATUS, NO_REK_PENGIRIM, NO_REK_PENERIMA, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU) VALUES(:id_status, :no_rek_pengirim, :no_rek_penerima, :jumlah_uang, :saldo_akhir, CURDATE(), CURTIME())";
+            $sql = "INSERT INTO daftar_transaksi (ID_STATUS, NO_REK_PENGIRIM, NO_REK_PENERIMA, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU) VALUES(:id_status, :no_rek_pengirim, :no_rek_penerima, :jumlah_uang, :saldo_akhir, CURDATE(), :date)";
             
             $statement = $connection->prepare($sql); //prepare statement
             //bindValue statement
@@ -132,6 +135,7 @@
             $statement->bindValue(':no_rek_penerima',$no_rek_penerima);
             $statement->bindValue(':jumlah_uang',$jumlah_uang);
             $statement->bindValue(':saldo_akhir',$saldo);
+            $statement->bindValue(':date',$date);
             $statement->execute(); //execute statement
             
             $sql = "SELECT SALDO FROM rekening WHERE NO_REK = :no_rek_penerima"; //query
@@ -156,7 +160,7 @@
             $statement->execute(); //execute statement
             
             //query
-            $sql = "INSERT INTO daftar_transaksi (ID_STATUS, NO_REK_PENGIRIM, NO_REK_PENERIMA, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU) VALUES(:id_status, :no_rek_pengirim, :no_rek_penerima, :jumlah_uang, :saldo_akhir, CURDATE(), CURTIME())";
+            $sql = "INSERT INTO daftar_transaksi (ID_STATUS, NO_REK_PENGIRIM, NO_REK_PENERIMA, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU) VALUES(:id_status, :no_rek_pengirim, :no_rek_penerima, :jumlah_uang, :saldo_akhir, CURDATE(), :date)";
             
             $statement = $connection->prepare($sql); //prepare statement
             //bindValue statement
@@ -165,6 +169,7 @@
             $statement->bindValue(':no_rek_penerima',$no_rek_pengirim);
             $statement->bindValue(':jumlah_uang',$jumlah_uang);
             $statement->bindValue(':saldo_akhir',$saldo);
+            $statement->bindValue(':date',$date);
             $statement->execute(); //execute statement
             
         }catch(PDOException $err){
@@ -179,7 +184,7 @@
             $connection = connect(); //memanggil fungsi connect untuk koneksi ke database
 
             //query
-            $sql = "SELECT ID_TRANSAKSI, KETERANGAN, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU FROM daftar_transaksi, jenis_transaksi WHERE NO_REK_PENGIRIM = :no_rek AND daftar_transaksi.ID_STATUS = jenis_transaksi.ID_STATUS ";
+            $sql = "SELECT ID_TRANSAKSI, KETERANGAN, JUMLAH_UANG, SALDO_AKHIR, TANGGAL, WAKTU FROM daftar_transaksi, jenis_transaksi WHERE NO_REK_PENGIRIM = :no_rek AND daftar_transaksi.ID_STATUS = jenis_transaksi.ID_STATUS ORDER BY WAKTU DESC;";
 
             $statement = $connection->prepare($sql); //prepare statement
             $statement->bindValue(':no_rek',$no_rek); //bindValue statement
@@ -192,9 +197,9 @@
                 echo "<tr>
 						<td>{$row['TANGGAL']}</td>
 						<td>{$waktu}</td>
-						<td>Rp {$row['JUMLAH_UANG']},-</td>
+						<td>Rp. ".number_format($row['JUMLAH_UANG'],0,",",".").",-</td>
                         <td>{$row['KETERANGAN']}</td>
-                        <td>Rp {$row['SALDO_AKHIR']},-</td>
+                        <td>Rp. ".number_format($row['SALDO_AKHIR'],0,",",".").",-</td>
                     </tr>";
             }
         } catch(PDOException $err){

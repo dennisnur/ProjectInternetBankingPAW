@@ -30,9 +30,17 @@
     }
 ?>
 <!-- Bagian header, dengan include file header.php -->
-<?php include 'header.php'; ?> 
+<?php include 'header.php'; ?>
 <!-- Bagian konten index yang berisi deskripsi dan form login admin maupun customer -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Silahkan Masuk dengan Nama Pengguna & Kata Sandi anda.</span>
+    </div>
     <h2>Selamat Datang
         <br />di Quick Online</h2>
     <!-- Bagian deskripsi -->
@@ -59,4 +67,4 @@
         </form>
     </div>
 
-<?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>

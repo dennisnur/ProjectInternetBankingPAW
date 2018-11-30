@@ -10,6 +10,15 @@
 <?php include 'headerAdmin.php'; //menambahkan file headerAdmin.php?>
 <!-- Bagian isi konten halaman berupa tampilan data detil customer -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Halaman ini berisi informasi<br>detil nasabah. Terdapat fitur<br>Tambah Rekening dan Hapus<br>Rekening nasabah.
+        </span>
+    </div>
     <h3>Detil Nasabah</h3>
     <div class="view-customer">
         <div class="detil">

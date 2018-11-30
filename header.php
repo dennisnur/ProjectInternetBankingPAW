@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/header.css">
     <link rel="stylesheet" type="text/css" href="public/css/about.css">
     <link rel="stylesheet" type="text/css" href="public/css/footer.css">
+    <script src="public/js/script.js"></script>
 </head>
 
 <body>

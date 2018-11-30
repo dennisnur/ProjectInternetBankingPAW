@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/customerTransactionHistory.css">
     <link rel="stylesheet" type="text/css" href="../public/css/customerProfile.css">
     <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
-    <script src="../public/js/script.js" type="text/javascript"></script>
+    <script src="../public/js/script.js"></script>
 </head>
 
 <body>

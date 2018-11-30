@@ -11,6 +11,15 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa tabel data daftar rekening nasabah -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Halaman ini berisi informasi.<br>Nomor Rekening dan Saldo Nasabah.<br>
+        </span>
+    </div>
     <h3>Daftar Rekening</h3>
     <div class="view-rekening">
         <table>

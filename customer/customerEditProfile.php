@@ -32,6 +32,15 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa formulir -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Untuk melakukan ubah password,<br>silahkan isi seluruh isian pada<br>formulir dengan benar dan tepat.
+        </span>
+    </div>
     <h3>Formulir Ubah Password</h3>
     <div class="add-form">
         <form method="post" action="customerEditProfile.php">
@@ -73,7 +82,7 @@
             </div>
             <div class="form-group">
                 <div class="form-control-input">
-                    <input type="hidden" name="id" size="22" value="<?php echo $id; ?>">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
                 </div>
             </div>
             <div class="form-group">

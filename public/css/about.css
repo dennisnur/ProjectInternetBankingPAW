@@ -1,11 +1,14 @@
 /* css untuk class .about */
 .about {
     margin: auto;
-    width:900px;
-    background-color: #66a5ad;
+    width:100%;
 }
 /* css untuk tag h3 */
-h3 {
+.about h3 {
+    margin-top: 70px;
+    text-align: center;
+}
+.about p{
     text-align: center;
 }
 /* css untuk class .column */

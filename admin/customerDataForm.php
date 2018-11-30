@@ -34,6 +34,15 @@
 <?php include 'headerAdmin.php'; //menambahkan file headerAdmin.php?>
 <!-- Bagian isi konten halaman berupa formulir -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Untuk menambahkan data nasabah<br>baru, isi seluruh isian pada formulir<br>dengan benar dan tepat.
+        </span>
+    </div>
     <h3>Formulir Tambah Nasabah</h3>
     <div class="add-form">
         <form method="post" action="customerDataForm.php">

@@ -43,6 +43,15 @@
 <?php include 'headerAdmin.php'; //menambahkan file headerAdmin.php;?>
 <!-- Bagian isi konten halaman berupa formulir  -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Untuk mengubah data nasabah<br>, isi seluruh isian pada formulir<br>dengan benar dan tepat.
+        </span>
+    </div>
     <h3>Formulir Ubah Nasabah</h3>
     <div class="add-form">
         <form method="post" action="customerEditForm.php">
@@ -131,7 +140,7 @@
 
             <div class="form-group">
                 <div class="form-control-input">
-                    <input type="hidden" name="id" size="22" value="<?php echo $id; ?>">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
                 </div>
             </div>
             <div class="form-group">

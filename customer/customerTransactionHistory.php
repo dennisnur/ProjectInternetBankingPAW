@@ -10,6 +10,15 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa tombol pilihan no rekening yang ingin ditampilkan data riwayat transaksinya -->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Untuk melihat riwayat transaksi,<br>silahkan pilih nomor<br>rekening yang diinginkan.
+        </span>
+    </div>
     <h3>Riwayat Transaksi</h3>
     <div class="transaction-history">
         <div class="container-form">

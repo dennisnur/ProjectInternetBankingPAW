@@ -34,6 +34,15 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa formulir berisi pilihan no rekening, no rekening tujuan, dan jumlah uang yang ingin ditransfer-->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Untuk melakukan transfer, silahkan<br>isi seluruh isian pada formulir<br>dengan benar dan tepat.
+        </span>
+    </div>
     <h3>Form Transfer</h3>
     <div class="add-form">
         <form method="post" action="customerTransferForm.php">

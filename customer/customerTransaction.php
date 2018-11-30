@@ -10,6 +10,15 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa tombol transfer dan tombol riwayat transaksi-->
 <div class="content">
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Halaman ini berisi fitur.<br>Transfer dan Lihat Riwayat<br>Transaksi.
+        </span>
+    </div>
     <h3>Halaman Transaksi</h3>
     <div class="view-transaction">
         <a class="tombol-transfer" href="customerTransferForm.php">Transfer</a>

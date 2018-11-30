@@ -10,7 +10,16 @@
 <?php include 'headerCustomer.php'; //menambahkan file headerCustomer.php?>
 <!-- Bagian isi konten halaman berupa data detil customer -->
 <div class="content">
-    <h3>Profile</h3>
+    <!-- Bagian tombol bantuan -->
+    <div class="help">
+        <button class="help-button" onclick="helpIndex()">?</button>
+    </div>
+    <!-- Bagian keterangan bantuan -->
+    <div class="help-description" id="help-description">
+        <span>Halaman ini berisi informasi<br>detil nasabah. Terdapat fitur<br>Ubah Password.
+        </span>
+    </div>
+    <h3>Detil Nasabah</h3>
     <div class="view-profile">
         <div class="row">
             <div class="column-label">
