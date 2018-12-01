@@ -12,7 +12,7 @@
 <div class="content">
     <h3>Halaman Informasi Transfer</h3>
     <div class="view-transaction">
-        <p>Transfer sebesar Rp. <?php echo $_GET['uang']; ?>,- ke no rekening <?php echo $_GET['rek']; ?> berhasil !</p>
+        <p>Transfer sebesar Rp. <?php echo number_format($_GET['uang'],0,",","."); ?>,- ke no rekening <?php echo $_GET['rek']; ?> berhasil !</p>
         <a href="customerTransaction.php" class="tombol-kembali">Kembali</a>
     </div>
 </div>
